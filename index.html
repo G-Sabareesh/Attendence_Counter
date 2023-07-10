@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&#128202; Attendence Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <script type = "text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="whole" align="center">
+            <section class="first-portion" id="firstportion">
+                <!--  button section -->
+                <div class="wrapper">
+                    <button id="btn" onclick="totalClick(-0.5)">-</button>
+                    <span id="num" class="display">0</span>
+                    <button id="btn" onclick="totalClick(0.5)">+</button>
+            </div>
+            <p class="displaystatement"><span id="num1" class="value">0</span> Days you taken leave</p>
+            <button onclick="myfunction()" id="textbutton" title="show more detail">Show more</button>
+            </section>
+            <span id="popup" align="center"></span>
+            <section id="second-portion" class="one">
+                <!-- display section -->
+                <div class="wrapper_showdetails">
+                    <p class="displaystatement"> Present-Days : <span id="days" class="value"> 0</span></p>
+                    <p class="displaystatement"> Attendence% : <span id="percent" class="value"> 0.0</span></p>
+                </div>
+                <button id="resetButton" onClick="reset()" title="Reset the value">Reset</button>
+            </section>
+        </div>
+        <span id="disclaimer">*Default total days set by 90 days.</span>
+    </div>
+</body>
+</html>
