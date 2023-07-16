@@ -30,7 +30,7 @@ function totalClick(click) {
 }
 
 // once refresh or reopen function
-const recall = function()
+function recall()
 {
     // initial and get the value from local storage
     const finalvalue = 0;
