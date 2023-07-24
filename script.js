@@ -135,7 +135,7 @@ function get_body(){
     // console.log(screen_width);
     body.style.width = screen_width;
     // console.log(screen_height);
-    body.style.width = screen_height;
+    body.style.height = screen_height;
 }
 
 // once the program or document lode
