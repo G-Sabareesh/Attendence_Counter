@@ -127,7 +127,18 @@ function reset()
     }
     
 }
+function get_body(){
+
+    var screen_height = window.innerHeight; 
+    var screen_width = window.innerWidth;
+    let body = document.getElementsByTagName('body')[0];
+    // console.log(screen_width);
+    body.style.width = screen_width;
+    // console.log(screen_height);
+    body.style.width = screen_height;
+}
 
 // once the program or document lode
+document.onlode = get_body();
 document.onlode = recall();
 document.onlode = totalClick(0);
