@@ -93,8 +93,6 @@ function myfunction()
     myv = document.getElementById('textbutton');
     myvar.classList.toggle("summa");
     myv.textContent = myv.textContent.includes('Show more') ? "Show less" : "Show more"
-    // myv.innerText = "Show less";
-    // console.log("showmore");
 }
 
 // For reset refresh the screen
@@ -127,18 +125,18 @@ function reset()
     }
     
 }
-function get_body(){
+function resizeScreen(){
+    const element = document.documentElement;
+    const screenWidth = window.innerWidth;
+    const screenHeight = window.innerHeight;
 
-    var screen_height = window.innerHeight; 
-    var screen_width = window.innerWidth;
-    let body = document.getElementsByTagName('body')[0];
-    // console.log(screen_width);
-    body.style.width = screen_width;
-    // console.log(screen_height);
-    body.style.height = screen_height;
+    // Set the content size to match the screen size
+    element.style.width = screenWidth + "px";
+    element.style.height = screenHeight + "px";
 }
 
+window.addEventListener("resize", resizeScreen);
 // once the program or document lode
-document.onlode = get_body();
+document.onlode = resizeScreen();
 document.onlode = recall();
 document.onlode = totalClick(0);
