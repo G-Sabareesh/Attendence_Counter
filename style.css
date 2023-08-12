@@ -21,27 +21,13 @@ body
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, #ee75d0e0, #7aaae0ee,  #9352e2e1);
+    background-color: #7aaae0ee;
     height: 100vh;
     width: auto;
-    background-size: 500% 500%;
-    animation: anim 5s infinite cubic-bezier(.45,.05,.55,.95);	
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-@keyframes anim{
-    0%{
-    background-position: 0%;
-    }
-    50%{
-    background-position: 100%;
-    }
-    75%{
-    background-position: 50% ;
-    }
-    100%{
-    background-position: 0%;
-    }
-}
 #whole
 {
     display: flex;
@@ -142,7 +128,6 @@ p
     text-align: right;
     font-weight: bold;
     font-size: x-large;
-    /* background-color: rgba(255, 255, 255, 0.288); */
     color: #ecf87fb9;
     /* background-color: blueviolet; */
 }
